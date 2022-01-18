@@ -1,0 +1,39 @@
+
+/* main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+#main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: black;
+max-width: 500px;
+height:500px;
+margin: auto;
+margin-top: 200px;
+}
+
+
+
+
+.player-name , .submit-name {
+   
+
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+#start-button {
+    width: 255px;
+    padding: 5px;
+    border-radius: 10px;
+    
+}

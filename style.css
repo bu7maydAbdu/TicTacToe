@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+body {
+    background: linear-gradient(90deg, rgba(125,124,142,1) 0%, rgba(30,30,59,1) 35%, rgba(71,82,84,1) 100%);
+    /* background: linear-gradient(90deg, rgba(150,50,195,1) 0%, rgba(45,147,100,1) 43%, rgba(137,26,170,1) 100%); */
+   
+
+}
+#game-div {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    /* background-color: black; */
+
+}
+#game-title {
+   
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+
+#the-winner {
+    font-size: 30px;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+
+#player-turn {
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+#board {
+    /* width: 50vw;
+    height: 50vh; */
+
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    /* grid-template-rows: repeat(3, 1px); */
+    justify-content: center;
+    grid-gap: 10px;
+
+}
+.cell {
+    border: solid 3px black;
+    max-width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Permanent Marker';
+    border: none;
+    border-radius: 10px;
+
+    background-color: white;
+
+
+}
+#rematch {
+    background-color: transparent;
+    border: none;
+    margin-top: 50px;
+  
+}
+
+#refresh-img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+filter: invert();}
+
+#refresh-img:hover {
+    transform: rotate(360deg);
+}
+
+#footer{
+  
+    display: flex;
+    position: fixed;
+    gap: 5px;
+  
+    /* background-color: hsla(360, 100%, 100%, 0.07); */
+    
+    width: 100vw;
+    height: 45px ;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+#cold-style, #aurora-style {
+
+    width: fit-content;
+    
+    font-family: 'Permanent Marker', cursive ;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: hsla(360, 100%, 100%, 0.07);
+    color: white;
+    cursor:pointer;
+    border: none;
+}
+#cold-style {
+    background: linear-gradient(90deg, rgba(125,124,142,0.322) 0%, rgba(30,30,59,0.322) 35%, rgba(71,82,84,0.322) 100%);
+    border-radius: 10px     0      0           0;
+    margin-left: auto;
+}
+#cold-style:hover {
+  background:   linear-gradient(90deg, rgba(125,124,142,1) 0%, rgba(30,30,59,1) 35%, rgba(71,82,84,1) 100%);
+}
+
+#aurora-style {
+
+    background: linear-gradient(90deg, rgba(149, 50, 195, 0.322) 0%, hsla(152, 53%, 38%, 0.322) 43%, rgba(136, 26, 170, 0.322) 100%);
+    border-radius: 0    10px      0           0;
+     margin-right: auto;
+}
+
+#aurora-style:hover {
+    background: linear-gradient(90deg, rgb(71, 5, 102) 0%, rgba(45,147,100,1) 43%, rgb(59, 3, 77) 100%);
+    
+}
